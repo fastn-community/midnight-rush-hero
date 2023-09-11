@@ -2,7 +2,7 @@
 
 -- component stack:
 caption title:
-body subtitle:
+optional body subtitle:
 ftd.image-src image:
 optional string cta-primary-text:
 optional string cta-primary-url:
