@@ -7,7 +7,7 @@ optional string cta-primary-text:
 optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
-string id: content
+
 
 -- ftd.column:
 width: fill-container
