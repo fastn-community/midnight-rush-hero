@@ -83,13 +83,11 @@ caption title:
 optional body subtitle:
 
 -- ftd.column:
-padding-vertical.px: 80
-
+padding-vertical.px: 12
 
 -- ftd.column:
 spacing.fixed.px: 16
 width: fill-container
-z-index: 1
 
 -- ftd.text: $without-image-helper-mobile.title
 role: $inherited.types.heading-large
