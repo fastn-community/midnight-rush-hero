@@ -51,6 +51,7 @@ optional body subtitle:
 width: fill-container
 padding-vertical.px: 100
 align-content: left
+spacing.fixed.px: 12
 
 -- ftd.text: $without-image-helper-desktop.title
 role: $inherited.types.heading-large
