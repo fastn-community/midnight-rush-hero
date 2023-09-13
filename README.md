@@ -16,10 +16,9 @@ Here's an example of how the Header Component might look when rendered:
 ![hero.png](.github/assets/hero.png)
 
 
-
 ## Getting Started
 
-To use the Business Card Component in your `fastn` package, follow these steps:
+To use the Hero Components in your `fastn` package, follow these steps:
 
 1. **Add the Header Dependency**: Open your `FASTN.ftd` file and add 
    the following line to include the Header component:
@@ -44,4 +43,7 @@ fields.
 
 ## Fields
 
-Feel free to reach out if you have any questions or need further assistance. Happy coding!
+Feel free to reach out if you have any questions or need further assistance. 
+
+
+***Happy coding!***
