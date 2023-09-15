@@ -70,9 +70,10 @@ optional ftd.background background:
 align-content: left
 width: fill-container
 spacing.fixed.px: 45
-background: $left-stack-helper-desktop.background
-padding-vertical.px: 50
-padding-horizontal.px: 50
+background.solid: $inherited.colors.background.step-1
+background if { left-stack-helper-desktop.background != NULL }: $left-stack-helper-desktop.background
+border-radius.px: 20
+padding.px: 50
 
 -- ftd.column:
 spacing.fixed.px: 24
@@ -135,9 +136,10 @@ optional ftd.background background:
 align-content: left
 width: fill-container
 spacing.fixed.px: 45
-background.solid: $left-stack-helper-mobile.background
-padding-vertical.px: 50
-padding-horizontal.px: 50
+background.solid: $inherited.colors.background.step-1
+background if { left-stack-helper-mobile.background != NULL }: $left-stack-helper-mobile.background
+border-radius.px: 20
+padding.px: 24
 
 
 -- ftd.column:
