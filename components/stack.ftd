@@ -1,5 +1,5 @@
 -- import: fastn-community.github.io/midnight-rush-hero/components/button
--- import: fastn-stack.github.io/fastn-js/utils
+
 
 -- component stack-helper:
 caption title:
@@ -67,8 +67,8 @@ optional ftd.background background:
 align-content: center
 width: fill-container
 spacing.fixed.px: 32
-background if { stack-helper-desktop.background != NULL }: $stack-helper-desktop.background
 background.solid: $inherited.colors.background.step-1
+background if { stack-helper-desktop.background != NULL }: $stack-helper-desktop.background
 border-radius.px: 20
 padding.px: 50
 
@@ -129,7 +129,9 @@ optional ftd.background background:
 align-content: center
 width: fill-container
 spacing.fixed.px: 45
-background: $stack-helper-mobile.background
+background.solid: $inherited.colors.background.step-1
+background if { stack-helper-mobile.background != NULL }: $stack-helper-mobile.background
+border-radius.px: 20
 padding.px: 24
 
 -- ftd.column:
