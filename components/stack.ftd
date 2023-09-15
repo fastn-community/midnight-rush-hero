@@ -67,7 +67,9 @@ optional ftd.background background:
 align-content: center
 width: fill-container
 spacing.fixed.px: 32
-background: $stack-helper-desktop.background
+background if { stack-helper-desktop.background != NULL }: $stack-helper-desktop.background
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 20
 padding.px: 50
 
 -- ftd.text: $stack-helper-desktop.title
