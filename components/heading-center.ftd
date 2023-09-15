@@ -70,7 +70,7 @@ align-content: center
 padding.px: 50
 background.solid: $inherited.colors.background.step-1
 background if { heading-center-helper-desktop.background != NULL }: $heading-center-helper-desktop.background
-spacing: space-between
+spacing.fixed.px: 30
 role: $inherited.types.copy-regular
 border-radius.px: 20
 
@@ -81,6 +81,7 @@ role: $inherited.types.heading-large
 -- ftd.row:
 width: fill-container
 spacing: space-between
+align-content: center
 
 -- ftd.column:
 width.fixed.percent: 55
