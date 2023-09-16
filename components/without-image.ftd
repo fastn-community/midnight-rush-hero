@@ -7,7 +7,7 @@ optional string cta-primary-text:
 optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
-
+optional ftd.background background:
 
 -- ftd.column:
 width: fill-container
@@ -20,6 +20,7 @@ cta-primary-text: $without-image-helper.cta-primary-text
 cta-primary-url: $without-image-helper.cta-primary-url
 cta-secondary-text: $without-image-helper.cta-secondary-text
 cta-secondary-url: $without-image-helper.cta-secondary-url
+background: $without-image-helper.background
 
 -- end: ftd.desktop
 
@@ -31,6 +32,7 @@ cta-primary-text: $without-image-helper.cta-primary-text
 cta-primary-url: $without-image-helper.cta-primary-url
 cta-secondary-text: $without-image-helper.cta-secondary-text
 cta-secondary-url: $without-image-helper.cta-secondary-url
+background: $without-image-helper.background
 
 -- end: ftd.mobile
 
@@ -45,9 +47,7 @@ cta-secondary-url: $without-image-helper.cta-secondary-url
 
 
 
--- ftd.background-image bg-image: 
-src: $assets.files.images.background.svg 
-repeat: no-repeat 
+
 
 
 
@@ -58,12 +58,17 @@ optional string cta-primary-text:
 optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
+optional ftd.background background:
 
 -- ftd.column:
 width: fill-container
 padding-vertical.px: 100
+padding-horizontal.px: 50
 align-content: left
 spacing.fixed.px: 12
+background.solid: $inherited.colors.background.step-1
+background if { without-image-helper-desktop.background != NULL }: $without-image-helper-desktop.background
+border-radius.px: 20
 
 -- ftd.text: $without-image-helper-desktop.title
 role: $inherited.types.heading-large
@@ -109,13 +114,16 @@ optional string cta-primary-text:
 optional string cta-primary-url:
 optional string cta-secondary-text:
 optional string cta-secondary-url:
+optional ftd.background background:
 
 -- ftd.column:
 padding-vertical.px: 12
-
--- ftd.column:
+background.solid: $inherited.colors.background.step-1
+background if { without-image-helper-mobile.background != NULL }: $without-image-helper-mobile.background
+border-radius.px: 20
 spacing.fixed.px: 16
 width: fill-container
+
 
 -- ftd.text: $without-image-helper-mobile.title
 role: $inherited.types.heading-large
@@ -139,9 +147,6 @@ link: $without-image-helper-mobile.cta-primary-url
 link: $without-image-helper-mobile.cta-secondary-url
 
 -- end: ftd.row
-
-
--- end: ftd.column
 
 -- end: ftd.column
 
